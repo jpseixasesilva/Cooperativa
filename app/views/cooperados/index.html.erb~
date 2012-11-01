@@ -1,0 +1,29 @@
+<h1>Listing cooperados</h1>
+
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Telefone</th>
+    <th>Endereco</th>
+    <th>Data</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @cooperados.each do |cooperado| %>
+  <tr>
+    <td><%= cooperado.nome %></td>
+    <td><%= cooperado.telefone %></td>
+    <td><%= cooperado.endereco %></td>
+    <td><%= cooperado.data %></td>
+    <td><%= link_to 'Show', cooperado %></td>
+    <td><%= link_to 'Edit', edit_cooperado_path(cooperado) %></td>
+    <td><%= link_to 'Destroy', cooperado, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Cooperado', new_cooperado_path %>
