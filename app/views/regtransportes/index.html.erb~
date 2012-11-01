@@ -1,0 +1,29 @@
+<h1>Listing regtransportes</h1>
+
+<table>
+  <tr>
+    <th>Presidente</th>
+    <th>Funcionario</th>
+    <th>Transporte</th>
+    <th>Produto</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @regtransportes.each do |regtransporte| %>
+  <tr>
+    <td><%= regtransporte.presidente %></td>
+    <td><%= regtransporte.funcionario %></td>
+    <td><%= regtransporte.transporte %></td>
+    <td><%= regtransporte.produto %></td>
+    <td><%= link_to 'Show', regtransporte %></td>
+    <td><%= link_to 'Edit', edit_regtransporte_path(regtransporte) %></td>
+    <td><%= link_to 'Destroy', regtransporte, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Regtransporte', new_regtransporte_path %>

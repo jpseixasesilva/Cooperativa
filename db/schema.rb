@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121101233650) do
+ActiveRecord::Schema.define(:version => 20121101234536) do
 
   create_table "cooperados", :force => true do |t|
     t.string   "nome"
@@ -62,6 +62,20 @@ ActiveRecord::Schema.define(:version => 20121101233650) do
 
   add_index "regleites", ["cooperado_id"], :name => "index_regleites_on_cooperado_id"
   add_index "regleites", ["presidente_id"], :name => "index_regleites_on_presidente_id"
+
+  create_table "regtransportes", :force => true do |t|
+    t.integer  "presidente_id"
+    t.integer  "funcionario_id"
+    t.integer  "transporte_id"
+    t.integer  "produto_id"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
+
+  add_index "regtransportes", ["funcionario_id"], :name => "index_regtransportes_on_funcionario_id"
+  add_index "regtransportes", ["presidente_id"], :name => "index_regtransportes_on_presidente_id"
+  add_index "regtransportes", ["produto_id"], :name => "index_regtransportes_on_produto_id"
+  add_index "regtransportes", ["transporte_id"], :name => "index_regtransportes_on_transporte_id"
 
   create_table "transportes", :force => true do |t|
     t.string   "placa"

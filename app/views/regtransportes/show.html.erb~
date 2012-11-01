@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Presidente:</b>
+  <%= @regtransporte.presidente %>
+</p>
+
+<p>
+  <b>Funcionario:</b>
+  <%= @regtransporte.funcionario %>
+</p>
+
+<p>
+  <b>Transporte:</b>
+  <%= @regtransporte.transporte %>
+</p>
+
+<p>
+  <b>Produto:</b>
+  <%= @regtransporte.produto %>
+</p>
+
+
+<%= link_to 'Edit', edit_regtransporte_path(@regtransporte) %> |
+<%= link_to 'Back', regtransportes_path %>

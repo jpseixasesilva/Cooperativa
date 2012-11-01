@@ -1,0 +1,7 @@
+= semantic_form_for [@regtransporte] do |form|
+
+  = form.input :presidente, :member_label => :nome, :label => 'Presidente'
+  = form.input :funcionario, :member_label => :nome, :label => 'Funcionario'
+  = form.input :transporte, :member_label => :placa, :label => 'Transporte'
+  = form.input :produto, :member_label => :nome, :label => 'Produto'
+  = form.submit 'Salvar'
