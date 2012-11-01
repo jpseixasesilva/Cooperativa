@@ -1,0 +1,5 @@
+= semantic_form_for [@transporte] do |form|
+  = form.input :placa, :label => 'Placa'
+  = form.input :chassi, :label => 'Chassi'
+  = form.input :cor, :label => 'Cor'
+  = form.submit 'Salvar'

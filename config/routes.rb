@@ -1,4 +1,6 @@
 Cooperativa::Application.routes.draw do
+  resources :transportes
+
   resources :cooperados
 
   resources :funcionarios

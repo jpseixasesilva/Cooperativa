@@ -1,0 +1,27 @@
+<h1>Listing transportes</h1>
+
+<table>
+  <tr>
+    <th>Placa</th>
+    <th>Chassi</th>
+    <th>Cor</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @transportes.each do |transporte| %>
+  <tr>
+    <td><%= transporte.placa %></td>
+    <td><%= transporte.chassi %></td>
+    <td><%= transporte.cor %></td>
+    <td><%= link_to 'Show', transporte %></td>
+    <td><%= link_to 'Edit', edit_transporte_path(transporte) %></td>
+    <td><%= link_to 'Destroy', transporte, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Transporte', new_transporte_path %>

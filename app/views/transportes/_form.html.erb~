@@ -1,0 +1,29 @@
+<%= form_for(@transporte) do |f| %>
+  <% if @transporte.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@transporte.errors.count, "error") %> prohibited this transporte from being saved:</h2>
+
+      <ul>
+      <% @transporte.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :placa %><br />
+    <%= f.text_field :placa %>
+  </div>
+  <div class="field">
+    <%= f.label :chassi %><br />
+    <%= f.text_field :chassi %>
+  </div>
+  <div class="field">
+    <%= f.label :cor %><br />
+    <%= f.text_field :cor %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
