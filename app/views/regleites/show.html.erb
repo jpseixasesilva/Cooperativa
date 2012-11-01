@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Presidente:</b>
+  <%= @regleite.presidente.nome %>
+</p>
+
+<p>
+  <b>Cooperado:</b>
+  <%= @regleite.cooperado.nome %>
+</p>
+
+<p>
+  <b>Qtdleite:</b>
+  <%= @regleite.qtdleite %>
+</p>
+
+<p>
+  <b>Semana:</b>
+  <%= @regleite.semana %>
+</p>
+
+
+<%= link_to 'Edit', edit_regleite_path(@regleite) %> |
+<%= link_to 'Back', regleites_path %>

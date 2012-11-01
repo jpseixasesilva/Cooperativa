@@ -1,0 +1,33 @@
+<%= form_for(@regleite) do |f| %>
+  <% if @regleite.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@regleite.errors.count, "error") %> prohibited this regleite from being saved:</h2>
+
+      <ul>
+      <% @regleite.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :presidente %><br />
+    <%= f.text_field :presidente %>
+  </div>
+  <div class="field">
+    <%= f.label :cooperado %><br />
+    <%= f.text_field :cooperado %>
+  </div>
+  <div class="field">
+    <%= f.label :qtdleite %><br />
+    <%= f.text_field :qtdleite %>
+  </div>
+  <div class="field">
+    <%= f.label :semana %><br />
+    <%= f.text_field :semana %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

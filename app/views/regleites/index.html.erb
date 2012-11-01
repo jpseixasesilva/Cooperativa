@@ -1,0 +1,29 @@
+<h1>Listing regleites</h1>
+
+<table>
+  <tr>
+    <th>Presidente</th>
+    <th>Cooperado</th>
+    <th>Qtdleite</th>
+    <th>Semana</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @regleites.each do |regleite| %>
+  <tr>
+    <td><%= regleite.presidente %></td>
+    <td><%= regleite.cooperado %></td>
+    <td><%= regleite.qtdleite %></td>
+    <td><%= regleite.semana %></td>
+    <td><%= link_to 'Show', regleite %></td>
+    <td><%= link_to 'Edit', edit_regleite_path(regleite) %></td>
+    <td><%= link_to 'Excluir', regleite, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Regleite', new_regleite_path %>
