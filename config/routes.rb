@@ -1,4 +1,8 @@
 Cooperativa::Application.routes.draw do
+  resources :funcionarios
+
+  resources :produtos
+
   resources :presidentes
 
   # The priority is based upon order of creation:
