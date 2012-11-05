@@ -42,7 +42,7 @@ Released   : 20121026
 		</div>
 		<div id="banner">
 			<div class="content">
-				<div><img src="images/img02.jpg" width="1000" height="400" alt="" /></div>
+				<div><img src="images/img06.jpg" width="1000" height="400" alt="" /></div>
 			</div>
 		<%= yield %>
 			<div style='clear: both;'> </div>
