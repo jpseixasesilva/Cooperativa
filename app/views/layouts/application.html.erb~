@@ -42,25 +42,13 @@ Released   : 20121026
 		</div>
 		<div id="banner">
 			<div class="content">
-				<div><img src="images/img06.jpg" width="1000" height="400" alt="" /></div>
+				<!--<div><img src="images/img02.jpg" width="1000" height="400" alt="" /></div> -->
 			</div>
 		<%= yield %>
 			<div style='clear: both;'> </div>
 		</div>
 	</div>
 	<!-- end #header -->
-	<div id="page">
-		<div class="post">
-			<h2 class="title"><a href="#">Bem-Vindo ao Sistema Cooperativa </a></h2>
-			<div class="entry">
-				<p>Este Sistema de <strong>Cooperativa</strong> tem a função de Gerenciar um Cooperativa Leitera com Presidentes, Cooperados, Funcionários, Transporte, Produtos e possui um registro de Leite coletado semanalmente e um Registro do Transporte levando cada produto feito nesta Cooperativa</p>
-			</div>
-		</div>
-	</div>
-	<!-- end #page --> 
 	
-	<p>Copyright (c) 2012 Sitename.com. All rights reserved. Images by <a href="http://fotogrph.com/">Fotogrph</a>. Design by <a href="http://www.freecsstemplates.org">FCT</a>.</p>
-</div>
-<!-- end #footer -->
 </body>
 </html>
