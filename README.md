@@ -1,4 +1,4 @@
-Ror
+Sistema para Cooperativa de Leite
 ===
 
-Cooperativa
+Sistema de Cooperativa de Leite feita em Ruby on Rails
